@@ -7,29 +7,157 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>云-Yun</copyright>
-        <lastBuildDate>Wed, 09 Oct 2024 14:46:35 +0800</lastBuildDate><atom:link href="https://Herz1.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 11 Oct 2024 00:02:55 +0800</lastBuildDate><atom:link href="https://Herz1.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Mysecondblog</title>
+        <link>https://Herz1.github.io/p/mysecondblog.html</link>
+        <pubDate>Fri, 11 Oct 2024 00:02:55 +0800</pubDate>
+        
+        <guid>https://Herz1.github.io/p/mysecondblog.html</guid>
+        <description>&lt;h1 id=&#34;第一次编写博客&#34;&gt;第一次编写博客
+&lt;/h1&gt;&lt;h2 id=&#34;静态博客&#34;&gt;静态博客
+&lt;/h2&gt;&lt;h3 id=&#34;一原理&#34;&gt;一、原理
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;所谓静态博客系统指的是，博客网站是由一系列的静态 HTML 文件，以及对应的多媒体素材等组成，只要找一个可以存储文件的平台即可发布网站。有许多工具，可以把一篇篇博客文章的 Markdown 文件，配上博客主题之后转换为可以直接发布的 HTML 文件。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;C:%5cWindows%5cSystem32%5cmyblog%5cstatic%5cassets%5ctemplating.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;二原因&#34;&gt;二、原因
+&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;最常见的博客系统 WordPress 是一款动态博客系统（PHP 程序），这类系统需要在云主机商（如阿里云）那里买专门的空间或来存储和发布（存储并运行 PHP 程序）我们的博客网站。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;免费！动态博客需要购买服务器，境内优惠也要一年70，香港基本300起步，成本过高&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;C:%5cWindows%5cSystem32%5cmyblog%5cstatic%5cassets%5cblog-site.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;三过程&#34;&gt;三、过程
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;把 Markdown 转化为 HTML 的工具（即静态网站生成工具）&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;博客样式主题（通常与工具是配套的，一般来说找到了生成工具就找到了主题）&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;能存储和发布静态文件的平台&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;em&gt;常用的静态网站生成工具有 jekyll, hexo 和 hugo 等。以hugo（雨果）平台为例。&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;四创作&#34;&gt;四、创作
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;打开命令行环境，切换工作目录到网站目录&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在 &lt;code&gt;content&lt;/code&gt; 目录，添加并编辑新的 Markdown 内容文件&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;使用 hugo serve 在本地预览你的博客网站（&lt;a class=&#34;link&#34; href=&#34;http://localhost:1313%ef%bc%89/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;http://localhost:1313）&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cd myblog
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mkdir content/posts   # 本句仅需运行一次
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;# 如果是 Windows，请在 PowerShell 中执行此语句创建内容
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;New-Item -Type file content/posts/my-first-post.md
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;# 如果是 macOS 系统，执行此语句创建内容
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;touch content/posts/my-first-post.md
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;接下来再用喜欢的编辑器编辑新创建的 Markdown 文件即可。hugo 支持在 Markdown 顶部声明一些文章的基本信息，比如标题、创建时间等。下面就是一篇文章的 Markdown 内容示例：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;---
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;title: &amp;#34;文章的标题&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;date: 2018-08-31T18:35:00+08:00
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;draft: false
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;categories: [&amp;#34;Software Project&amp;#34; ]
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tags: [&amp;#34;博客&amp;#34;, &amp;#34;网站&amp;#34;, &amp;#34;hugo&amp;#34; ]
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;isCJKLanguage: true
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;---
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;在最前面的基本信息之后的所有内容，都是文章的正文部分。正文部分支持使用 Markdown 语法。比如可以[添加外链](https://github.com/)，以及**加粗文字**等。
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;可以去 hugo 的网站了解更多&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/content-management/front-matter/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;页面基本信息&lt;/a&gt;和&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/content-management/formats/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;内容语法介绍&lt;/a&gt;，以及教程信息。&lt;/p&gt;
+&lt;p&gt;上面我们创建的内容是&lt;code&gt;博客文章&lt;/code&gt;的类型，这种内容一经创建就会自动出现在网站首页的最新文章列表中。除此之外，我们还可以创建一些不被统计入目录的&lt;code&gt;页面&lt;/code&gt;。只需要在上面创建内容文件时，指定目录为 &lt;code&gt;content/pages&lt;/code&gt; 开头即可，而页面的内容仍然是以 Markdown 格式描述的。&lt;/p&gt;
+&lt;p&gt;如果需要在文章中插入图片、音视频等多媒体资源，可以在网站目录下的 &lt;code&gt;static&lt;/code&gt; 下创建一个专用的目录（如 &lt;code&gt;static/assets&lt;/code&gt;）。在需要往文章中插入图片时，只需要把图片放在这个目录中，并且在 Markdown 中插入相对路径即可（不包含 &lt;code&gt;static&lt;/code&gt; 前缀）。&lt;/p&gt;
+&lt;p&gt;在文章编辑期间，可以执行 &lt;code&gt;hugo server&lt;/code&gt; 命令在本地启动预览，然后在浏览器中打开新创建的文章，能即时查看文章的效果。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mkdir static/assets
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cp /path/to/image.jpg static/assets/
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;# 在 Markdown 中插入图片：（正文图片链接）(大图链接)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;# [![图片标题](/assets/image.jpg &amp;#34;图片标题&amp;#34;)](/assets/image.jpg)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;五发布&#34;&gt;五、发布
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;去专门提供存储的网站注册一个账号（使用 &lt;a class=&#34;link&#34; href=&#34;https://pages.github.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;GitHub Pages&lt;/a&gt; 的免费托管服务存储你的网站。）&lt;/li&gt;
+&lt;li&gt;在自己电脑上编译博客网站，并把生成好内容打包上传。（&lt;em&gt;注册过程仅需操作一次。以后每次要发布新文章时，都重复发布流程。&lt;/em&gt;）&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        </item>
+        <item>
         <title>Newnewnew</title>
-        <link>https://Herz1.github.io/p/newnewnew/</link>
+        <link>https://Herz1.github.io/p/newnewnew.html</link>
         <pubDate>Wed, 09 Oct 2024 14:46:35 +0800</pubDate>
         
-        <guid>https://Herz1.github.io/p/newnewnew/</guid>
+        <guid>https://Herz1.github.io/p/newnewnew.html</guid>
         <description></description>
         </item>
         <item>
         <title>MyFirstBlog</title>
-        <link>https://Herz1.github.io/p/myfirstblog/</link>
+        <link>https://Herz1.github.io/p/myfirstblog.html</link>
         <pubDate>Tue, 08 Oct 2024 23:21:37 +0800</pubDate>
         
-        <guid>https://Herz1.github.io/p/myfirstblog/</guid>
+        <guid>https://Herz1.github.io/p/myfirstblog.html</guid>
         <description>&lt;h1 id=&#34;hello-world&#34;&gt;hello world!
 &lt;/h1&gt;</description>
         </item>
         <item>
         <title>Chinese Test</title>
-        <link>https://Herz1.github.io/p/test-chinese/</link>
+        <link>https://Herz1.github.io/p/test-chinese.html</link>
         <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
         
-        <guid>https://Herz1.github.io/p/test-chinese/</guid>
+        <guid>https://Herz1.github.io/p/test-chinese.html</guid>
         <description>&lt;img src="https://Herz1.github.io/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash.jpg" alt="Featured image of post Chinese Test" /&gt;&lt;h2 id=&#34;正文测试&#34;&gt;正文测试
 &lt;/h2&gt;&lt;p&gt;而这些并不是完全重要，更加重要的问题是， 带着这些问题，我们来审视一下学生会退会。 既然如何， 对我个人而言，学生会退会不仅仅是一个重大的事件，还可能会改变我的人生。 我们不得不面对一个非常尴尬的事实，那就是， 可是，即使是这样，学生会退会的出现仍然代表了一定的意义。 学生会退会，发生了会如何，不发生又会如何。 经过上述讨论， 生活中，若学生会退会出现了，我们就不得不考虑它出现了的事实。 学生会退会，到底应该如何实现。 这样看来， 在这种困难的抉择下，本人思来想去，寝食难安。 对我个人而言，学生会退会不仅仅是一个重大的事件，还可能会改变我的人生。 就我个人来说，学生会退会对我的意义，不能不说非常重大。 莎士比亚曾经提到过，人的一生是短的，但如果卑劣地过这一生，就太长了。这似乎解答了我的疑惑。 莫扎特说过一句富有哲理的话，谁和我一样用功，谁就会和我一样成功。这启发了我， 对我个人而言，学生会退会不仅仅是一个重大的事件，还可能会改变我的人生。 学生会退会，到底应该如何实现。 一般来说， 从这个角度来看， 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 在这种困难的抉择下，本人思来想去，寝食难安。 了解清楚学生会退会到底是一种怎么样的存在，是解决一切问题的关键。 一般来说， 生活中，若学生会退会出现了，我们就不得不考虑它出现了的事实。 问题的关键究竟为何？ 而这些并不是完全重要，更加重要的问题是。&lt;/p&gt;
 &lt;p&gt;奥斯特洛夫斯基曾经说过，共同的事业，共同的斗争，可以使人们产生忍受一切的力量。　带着这句话，我们还要更加慎重的审视这个问题： 一般来讲，我们都必须务必慎重的考虑考虑。 既然如此， 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 带着这些问题，我们来审视一下学生会退会。 我认为， 我认为， 在这种困难的抉择下，本人思来想去，寝食难安。 问题的关键究竟为何？ 每个人都不得不面对这些问题。 在面对这种问题时， 要想清楚，学生会退会，到底是一种怎么样的存在。 我认为， 既然如此， 每个人都不得不面对这些问题。 在面对这种问题时， 那么， 我认为， 学生会退会因何而发生。&lt;/p&gt;
@@ -115,18 +243,18 @@
         </item>
         <item>
         <title>归档</title>
-        <link>https://Herz1.github.io/archives/</link>
+        <link>https://Herz1.github.io/archives.html</link>
         <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://Herz1.github.io/archives/</guid>
+        <guid>https://Herz1.github.io/archives.html</guid>
         <description></description>
         </item>
         <item>
         <title>Markdown Syntax Guide</title>
-        <link>https://Herz1.github.io/p/markdown-syntax-guide/</link>
+        <link>https://Herz1.github.io/p/markdown-syntax-guide.html</link>
         <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://Herz1.github.io/p/markdown-syntax-guide/</guid>
+        <guid>https://Herz1.github.io/p/markdown-syntax-guide.html</guid>
         <description>&lt;img src="https://Herz1.github.io/p/markdown-syntax-guide/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg" alt="Featured image of post Markdown Syntax Guide" /&gt;&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;
 &lt;h2 id=&#34;headings&#34;&gt;Headings
 &lt;/h2&gt;&lt;p&gt;The following HTML &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt;—&lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt; elements represent six levels of section headings. &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt; is the highest section level while &lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt; is the lowest.&lt;/p&gt;
@@ -353,10 +481,10 @@
         </item>
         <item>
         <title>Placeholder Text</title>
-        <link>https://Herz1.github.io/p/placeholder-text/</link>
+        <link>https://Herz1.github.io/p/placeholder-text.html</link>
         <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://Herz1.github.io/p/placeholder-text/</guid>
+        <guid>https://Herz1.github.io/p/placeholder-text.html</guid>
         <description>&lt;img src="https://Herz1.github.io/p/placeholder-text/matt-le-SJSpo9hQf7s-unsplash.jpg" alt="Featured image of post Placeholder Text" /&gt;&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;
 &lt;p&gt;Redit teque digerit hominumque toris verebor lumina non cervice subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc caluere tempus inhospita parcite confusaque translucet patri vestro qui optatis lumine cognoscere flos nubis! Fronde ipsamque patulos Dryopen deorum.&lt;/p&gt;
 &lt;ol&gt;
@@ -384,10 +512,10 @@
         </item>
         <item>
         <title>Math Typesetting</title>
-        <link>https://Herz1.github.io/p/math-typesetting/</link>
+        <link>https://Herz1.github.io/p/math-typesetting.html</link>
         <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://Herz1.github.io/p/math-typesetting/</guid>
+        <guid>https://Herz1.github.io/p/math-typesetting.html</guid>
         <description>&lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;
 &lt;p&gt;In this example we will be using &lt;a class=&#34;link&#34; href=&#34;https://katex.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;KaTeX&lt;/a&gt;&lt;/p&gt;
@@ -426,10 +554,10 @@ $$</description>
         </item>
         <item>
         <title>Emoji Support</title>
-        <link>https://Herz1.github.io/p/emoji-support/</link>
+        <link>https://Herz1.github.io/p/emoji-support.html</link>
         <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://Herz1.github.io/p/emoji-support/</guid>
+        <guid>https://Herz1.github.io/p/emoji-support.html</guid>
         <description>&lt;img src="https://Herz1.github.io/p/emoji-support/the-creative-exchange-d2zvqp3fpro-unsplash.jpg" alt="Featured image of post Emoji Support" /&gt;&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;
 &lt;p&gt;The &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/functions/emojify/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;code&gt;emojify&lt;/code&gt;&lt;/a&gt; function can be called directly in templates or &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/templates/shortcode-templates/#inline-shortcodes&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -457,27 +585,27 @@ $$</description>
         </item>
         <item>
         <title>关于</title>
-        <link>https://Herz1.github.io/%E5%85%B3%E4%BA%8E/</link>
+        <link>https://Herz1.github.io/%E5%85%B3%E4%BA%8E.html</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://Herz1.github.io/%E5%85%B3%E4%BA%8E/</guid>
+        <guid>https://Herz1.github.io/%E5%85%B3%E4%BA%8E.html</guid>
         <description>&lt;p&gt;This is a test page for i18n support.&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>搜索</title>
-        <link>https://Herz1.github.io/search/</link>
+        <link>https://Herz1.github.io/search.html</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://Herz1.github.io/search/</guid>
+        <guid>https://Herz1.github.io/search.html</guid>
         <description></description>
         </item>
         <item>
         <title>友链</title>
-        <link>https://Herz1.github.io/%E5%8F%8B%E9%93%BE/</link>
+        <link>https://Herz1.github.io/%E5%8F%8B%E9%93%BE.html</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://Herz1.github.io/%E5%8F%8B%E9%93%BE/</guid>
+        <guid>https://Herz1.github.io/%E5%8F%8B%E9%93%BE.html</guid>
         <description>&lt;p&gt;To use this feature, add &lt;code&gt;links&lt;/code&gt; section to frontmatter.&lt;/p&gt;
 &lt;p&gt;This page&amp;rsquo;s frontmatter:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
