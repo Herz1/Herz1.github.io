@@ -4,15 +4,15 @@
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="演示说明">
 <title>Tag: Themes - 云的博客</title>
 
-<link rel='canonical' href='https://Herz1.github.io/tags/themes.html'>
+<link rel='canonical' href='https://www.zhendi.world/tags/themes.html'>
 
 <link rel="stylesheet" href="/scss/style.min.e79c2ef55c00bf5b53033723edcfcf0c439b49ad7611445c6927f2c7c723a03e.css"><meta property='og:title' content="Tag: Themes - 云的博客">
 <meta property='og:description' content="演示说明">
-<meta property='og:url' content='https://Herz1.github.io/tags/themes.html'>
+<meta property='og:url' content='https://www.zhendi.world/tags/themes.html'>
 <meta property='og:site_name' content='云的博客'>
 <meta property='og:type' content='website'><meta property='og:updated_time' content=' 2024-10-11T00:02:55&#43;08:00 '/>
 <meta name="twitter:title" content="Tag: Themes - 云的博客">
-<meta name="twitter:description" content="演示说明"><link rel="alternate" type="application/rss&#43;xml" href="https://Herz1.github.io/tags/themes/index.xml">
+<meta name="twitter:description" content="演示说明"><link rel="alternate" type="application/rss&#43;xml" href="https://www.zhendi.world/tags/themes/index.xml">
     </head>
     <body class="">
     <script>
@@ -511,12 +511,26 @@
     }());
 </script>
 
+<style>
+  @font-face {
+    font-family: '鹿仲茉菜';
+    src: url(https://www.zhendi.world/font/073%20TEGUSE%20-%20Kanaka%20Font_240904.ttf) format('truetype');
+  }
+
+  :root {
+    --base-font-family: '鹿仲茉菜';
+    --code-font-family: '鹿仲茉菜';
+  }
+</style>
+
+<script color="255,165,79" opacity="0.45" zIndex="-1" count="499" src="https://cdn.jsdelivr.net/npm/canvas-nest.js@1/dist/canvas-nest.js"></script>
 <script>
     
-    const cssPath = "https://Herz1.github.io/waifu/waifu.css"
-    const tipsJsonPath = "https://Herz1.github.io/waifu/waifu-tips.json"
+    const cssPath = "https://www.zhendi.world/waifu/waifu.css"
+    const tipsJsPath = "https://www.zhendi.world/waifu/waifu-tips.js"
     
-    const live2d_path = "https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/";
+    const live2dJsPath = "https://www.zhendi.world/waifu/live2d.min.js"
+
     
     function loadExternalResource(url, type) {
         return new Promise((resolve, reject) => {
@@ -544,11 +558,11 @@
             loadExternalResource(cssPath, "css"),
             loadExternalResource(live2d_path + "live2d.min.js", "js"),
             loadExternalResource(live2d_path + "waifu-tips.js", "js")
+            loadExternalResource(live2dJsPath, "js")
         ]).then(() => {
             
             initWidget({
                 waifuPath: tipsJsonPath,
-                cdnPath: "https://fastly.jsdelivr.net/gh/fghrsh/live2d_api/",
                 tools: ["hitokoto", "asteroids", "switch-model", "switch-texture", "photo", "info", "quit"]
             });
             
@@ -600,17 +614,8 @@
         }
     }
 </script>
-<style>
-  @font-face {
-    font-family: '鹿仲茉菜';
-    src: url(https://Herz1.github.io/font/073%20TEGUSE%20-%20Kanaka%20Font_240904.ttf) format('truetype');
-  }
 
-  :root {
-    --base-font-family: '鹿仲茉菜';
-    --code-font-family: '鹿仲茉菜';
-  }
-</style>
+
 
     </body>
 </html>
