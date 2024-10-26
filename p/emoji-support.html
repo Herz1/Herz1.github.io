@@ -666,14 +666,15 @@
     --code-font-family: '鹿仲茉菜';
   }
 </style>
+    // 设置字体'鹿仲茉菜'
 
 <script color="255,165,79" opacity="0.45" zIndex="-1" count="499" src="https://cdn.jsdelivr.net/npm/canvas-nest.js@1/dist/canvas-nest.js"></script>
 <script>
     
     const cssPath = "https://www.zhendi.world/waifu/waifu.css"
-    const tipsJsPath = "https://www.zhendi.world/waifu/waifu-tips.js"
+    const tipsJsonPath = "https://www.zhendi.world/waifu/waifu-tips.json"
     
-    const live2dJsPath = "https://www.zhendi.world/waifu/live2d.min.js"
+     const live2d_path = "https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/";
 
     
     function loadExternalResource(url, type) {
@@ -702,11 +703,11 @@
             loadExternalResource(cssPath, "css"),
             loadExternalResource(live2d_path + "live2d.min.js", "js"),
             loadExternalResource(live2d_path + "waifu-tips.js", "js")
-            loadExternalResource(live2dJsPath, "js")
         ]).then(() => {
             
             initWidget({
                 waifuPath: tipsJsonPath,
+                cdnPath: "https://fastly.jsdelivr.net/gh/fghrsh/live2d_api/",
                 tools: ["hitokoto", "asteroids", "switch-model", "switch-texture", "photo", "info", "quit"]
             });
             
