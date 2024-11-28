@@ -17,7 +17,7 @@
 &lt;/h1&gt;&lt;h2 id=&#34;静态博客&#34;&gt;静态博客
 &lt;/h2&gt;&lt;h3 id=&#34;一原理&#34;&gt;一、原理
 &lt;/h3&gt;&lt;p&gt;&lt;strong&gt;所谓静态博客系统指的是，博客网站是由一系列的静态 HTML 文件，以及对应的多媒体素材等组成，只要找一个可以存储文件的平台即可发布网站。有许多工具，可以把一篇篇博客文章的 Markdown 文件，配上博客主题之后转换为可以直接发布的 HTML 文件。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;C:%5cWindows%5cSystem32%5cmyblog%5cstatic%5cassets%5ctemplating.png&#34;
+&lt;p&gt;&lt;img src=&#34;D:%5cmyblog%5ccontent%5cpost%5cmysecondblog%5cpics%5ctemplating.png%22%22&#34;
 	
 	
 	
@@ -28,7 +28,7 @@
 &lt;h2 id=&#34;二原因&#34;&gt;二、原因
 &lt;/h2&gt;&lt;p&gt;&lt;strong&gt;最常见的博客系统 WordPress 是一款动态博客系统（PHP 程序），这类系统需要在云主机商（如阿里云）那里买专门的空间或来存储和发布（存储并运行 PHP 程序）我们的博客网站。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;免费！动态博客需要购买服务器，境内优惠也要一年70，香港基本300起步，成本过高&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;C:%5cWindows%5cSystem32%5cmyblog%5cstatic%5cassets%5cblog-site.png&#34;
+&lt;p&gt;&lt;img src=&#34;D:%5cmyblog%5ccontent%5cpost%5cmysecondblog%5cpics%5cblog-site.png&#34;
 	
 	
 	
@@ -546,8 +546,6 @@
 
 &lt;h3 id=&#34;examples&#34;&gt;Examples
 &lt;/h3&gt;&lt;p&gt;Inline math: $\varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887…$&lt;/p&gt;
-&lt;p&gt;Block math:
-&lt;/p&gt;
 $$
  \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } 
 $$</description>
